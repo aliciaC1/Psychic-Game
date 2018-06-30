@@ -6,9 +6,13 @@
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     //variables set to starting values //
     var wins = 0;
+    console.log(wins);
     var losses = 0;
+    console.log(losses);
     var guessesLeft = 10;
+    console.log(guessesLeft);
     var guesses = [];
+    console.log(guesses);
   
 
 
@@ -19,6 +23,7 @@
             var userText = event.key;
             guesses.push(userText);
            var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+           console.log(computerGuess);
            
 
            
@@ -28,6 +33,9 @@
              guessesLeft = 10;
              computerGuess.length = 0;
              guesses.length = 0;
+             console.log(computerGuess);
+             console.log(userText);
+             console.log(wins);
 
            }
 
@@ -36,6 +44,10 @@
              losses ++;
              guesses.length = 0; 
              guessesLeft = 10;
+             console.log(computerGuess);
+             console.log(guesses);
+             console.log(losses);
+      
 
            }
 
@@ -53,7 +65,7 @@
             document.querySelector("#game").innerHTML = html;
 
     }
-  
+
 
 
   
